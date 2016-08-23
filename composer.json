@@ -6,12 +6,12 @@
             "email": "info@stephankrauss.de"
         }
     ],
-    "require-dev": {
+    "require": {
         "simpletest/simpletest": "^1.1"
 	},
 	"autoload": {
 		"psr-4": {
-			"StephanKrauss\\uebung\\": "src/"
+			"": "src/"
 		}
 	}
 }
