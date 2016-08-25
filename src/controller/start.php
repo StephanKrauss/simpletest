@@ -1,6 +1,5 @@
 <?php
-
-	namespace bla;
+	namespace controller;
 
 	/**
 	 * Beschreibung der Klasse
@@ -9,15 +8,15 @@
 	 * Ausführliche Beschreibung der Klasse
 	 *
 	 * @author User
-	 * @date 22.08.2016
-	 * @file bla1.php
+	 * @date 25.08.2016
+	 * @file start.php
 	 * @package front | admin | tabelle | data | tools | plugins
 	 * @subpackage model | controller | filter | validator
 	 */
-	class bla1
+	class start
 	{
-		public function getWert1(){
-			return 'wert1';
+		public function leer(){
+			echo 'leer';
 		}
 
 	} // end class
