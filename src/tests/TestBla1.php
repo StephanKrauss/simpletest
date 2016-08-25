@@ -9,12 +9,26 @@
 			$this->bla1 = new \bla\bla1();
 		}
 
+		function setUp()
+		{
+			$this->bla1->setWert1('aaa');
+		}
+
 		public function testGetWert1(){
 
-			$this->assertTrue($this->bla1->getWert1() == 'wert1');
+			$this->assertTrue($this->bla1->getWert1() == 'aaa');
 
 			// eine Behauptung ist falsch
 			$this->assertFalse($this->bla1->getWert1() == 'xxx');
+		}
+
+		public function testMock()
+		{
+			$mock = \Mock::generate('myMock');
+			$mock->ex
+
+			$test = 123;
+
 		}
 	}
 
