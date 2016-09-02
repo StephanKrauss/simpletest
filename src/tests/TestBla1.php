@@ -21,15 +21,6 @@
 			// eine Behauptung ist falsch
 			$this->assertFalse($this->bla1->getWert1() == 'xxx');
 		}
-
-		public function testMock()
-		{
-			$mock = \Mock::generate('myMock');
-			$mock->ex
-
-			$test = 123;
-
-		}
 	}
 
 	$testBla1 = new \TestBla1();

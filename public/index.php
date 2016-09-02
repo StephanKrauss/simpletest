@@ -18,7 +18,7 @@
 			include_once($link);
 		}
 		elseif( ($call[0] == 'tests') and !isset($call[1]) ){
-			$uniteTest = new TestSuite('alle Test');
+			$uniteTest = new TestSuite('Zusammenfassung: alle Test');
 
 			$link = "../src/tests/";
 			$files = scandir($link);
@@ -29,6 +29,8 @@
 					$uniteTest->addFile('../src/tests/'.$datei);
 				}
 			}
+
+			$uniteTest->run(new HtmlReporter());
 		}
 	}
 	else{

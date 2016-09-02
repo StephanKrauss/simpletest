@@ -1,1 +1,5 @@
 vendor/
+_docs/
+_layout/
+composer.lock
+.idea/
